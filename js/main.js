@@ -57,4 +57,29 @@ document.addEventListener('DOMContentLoaded', () => {
         applyTheme(nextTheme);
     });
 
+    const navToggle = document.getElementById('navToggle');
+    const primaryNav = document.getElementById('primaryNav');
+    const setNavigationState = (isOpen) => {
+        primaryNav.classList.toggle('is-open', isOpen);
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+        navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+        navToggle.innerHTML = isOpen
+            ? '<i class="fas fa-xmark" aria-hidden="true"></i>'
+            : '<i class="fas fa-bars" aria-hidden="true"></i>';
+    };
+
+    navToggle.addEventListener('click', () => {
+        setNavigationState(!primaryNav.classList.contains('is-open'));
+    });
+
+    primaryNav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => setNavigationState(false));
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 1100) {
+            setNavigationState(false);
+        }
+    });
+
 });

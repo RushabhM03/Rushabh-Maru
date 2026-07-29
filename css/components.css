@@ -371,6 +371,48 @@ html[data-theme="light"] .btn-secondary {
     border-color: var(--primary);
 }
 
+@media (max-width: 700px) {
+    .card {
+        padding: 1.5rem;
+    }
+
+    .card-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .timeline {
+        padding-left: 1.5rem;
+        gap: 2.5rem;
+    }
+
+    .timeline-item::before {
+        left: calc(-1.5rem - 7px);
+    }
+
+    .timeline-meta h4 {
+        font-size: 1.25rem;
+    }
+
+    .card-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .icon-link {
+        margin-left: 0;
+    }
+
+    .contact-details {
+        padding: 1.5rem;
+    }
+
+    .contact-email {
+        font-size: 1rem;
+        overflow-wrap: anywhere;
+    }
+}
+
 .clean-list {
     list-style: none;
 }
