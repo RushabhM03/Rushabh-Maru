@@ -263,6 +263,33 @@ html[data-theme="light"] .theme-toggle {
     margin-top: 1rem;
 }
 
+.contact-details {
+    padding: 2.5rem;
+    text-align: center;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+}
+
+.contact-details p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.contact-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact-email:hover {
+    text-decoration: underline;
+}
+
 :root {
     --bg-base: #0a0f1d;
     --bg-surface: #131b2e;
