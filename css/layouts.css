@@ -1,0 +1,266 @@
+/* Navigation Overlay */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 5%;
+    background: rgba(10, 15, 29, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.logo-mark {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: rgba(56, 189, 248, 0.12);
+    color: var(--primary);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.logo-text {
+    letter-spacing: 0.03em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.25rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* Base Layout Config */
+.section-container {
+    padding: 7rem 5% 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 3.5rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 3px;
+    background: var(--primary);
+}
+
+/* Updated Hero Section with explicit margins & expanded icons */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 5rem;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-size: 4.25rem;
+    line-height: 1.15;
+    margin-bottom: 2rem; /* Enhanced spacing */
+}
+
+/* Enlarged & spaced out social link elements */
+.social-links {
+    display: flex;
+    gap: 2rem; 
+    margin-bottom: 3rem; 
+}
+
+.social-links a {
+    font-size: 2.2rem; /* Significantly bigger sizing */
+    color: var(--text-muted);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.hero-cta {
+    margin-top: 1rem;
+}
+
+/* Vector SVG Container Adjustments */
+.hero-graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-svg {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+}
+
+/* SVG Keyframe Animation Routines */
+.rotator {
+    transform-origin: center;
+    animation: rotateSVG 25s linear infinite;
+}
+
+.pulse {
+    transform-origin: center;
+    animation: pulseSVG 4s ease-in-out infinite alternate;
+}
+
+@keyframes rotateSVG {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulseSVG {
+    0% { opacity: 0.3; transform: scale(0.95); }
+    100% { opacity: 0.8; transform: scale(1.02); }
+}
+
+/* Nested Sub-Role Timeline Adjustments */
+.sub-role-block {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed rgba(46, 61, 96, 0.4);
+}
+
+.sub-role-block:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.sub-role-block h5 {
+    font-size: 1.15rem;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+}
+
+.sub-date {
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-weight: 400;
+    margin-left: 0.5rem;
+}
+
+/* Layout Separations */
+.skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+}
+
+/* Give every project card one shared height on desktop, even across rows. */
+@media (min-width: 901px) {
+    .projects-grid,
+    .certifications-grid {
+        grid-auto-rows: 1fr;
+    }
+}
+
+.soft-skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+@media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 8rem;
+    }
+    .hero-graphic { order: -1; }
+    .social-links { justify-content: center; }
+}
+
+.education-cards, .subsections-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sub-block {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    padding: 2.5rem;
+    border-radius: 14px;
+}
+
+.sub-block h3 {
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.contact-wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 8rem;
+    }
+    .hero-graphic { order: -1; }
+    .social-links { justify-content: center; }
+}

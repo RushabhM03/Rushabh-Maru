@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rushabh Maru | Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <header class="navbar">
+        <a href="#hero" class="logo">
+            <span class="logo-mark">RM</span>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#techstack">Skills</a></li>
+                <li><a href="#certifications">Credentials</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#publications">Research</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#beyond-the-code">Beyond the Code</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="true">
+            <i class="fas fa-sun"></i>
+        </button>
+    </header>
+
+    <main>
+        <!-- Landing / Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1 class="animate-text">Hi, I'm <span class="highlight">Rushabh Maru</span></h1>
+                    <div class="social-links">
+                        <a href="https://github.com/RushabhM03" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/rushabh-maru-4a6b131b6" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:rpmaru@engineering.upenn.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                        <a href="assets/Rushabh Maru Resume.pdf" download class="btn btn-secondary">Download Resume</a>
+                    </div>
+                </div>
+                <div class="hero-graphic">
+                    <!-- Inline Aesthetic Tech SVG Animation Background -->
+                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+                        <defs>
+                            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#818cf8;stop-opacity:0.2" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="250" cy="250" r="180" fill="none" stroke="url(#grad)" stroke-width="2" stroke-dasharray="8 4" class="rotator"/>
+                        <circle cx="250" cy="250" r="130" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.5"/>
+                        <polygon points="250,100 380,325 120,325" fill="none" stroke="url(#grad)" stroke-width="2" class="pulse"/>
+                        <path d="M150,150 L350,350 M350,150 L150,350" stroke="#2e3d60" stroke-width="2"/>
+                        <circle cx="250" cy="250" r="15" fill="#38bdf8"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I am a software engineer specializing in distributed systems, machine learning pipelines, and highly automated backend infrastructure. With a background in building robust data architecture and scalable full-stack applications, I am focused on maximizing software efficiency, optimizing operational metrics, and implementing clean code solutions.</p>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="techstack" class="section-container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3>Languages & Frameworks</h3>
+                    <div class="tags-container">
+                        <span class="tag">Java</span><span class="tag">Python</span><span class="tag">JavaScript</span>
+                        <span class="tag">SQL</span><span class="tag">React.js</span><span class="tag">Angular</span>
+                        <span class="tag">Spring Boot</span><span class="tag">Node.js</span><span class="tag">FastAPI</span>
+                        <span class="tag">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>AI, Data Analytics & Big Data</h3>
+                    <div class="tags-container">
+                        <span class="tag">Machine Learning</span><span class="tag">Q (KDB+)</span><span class="tag">PyTorch</span>
+                        <span class="tag">TensorFlow</span><span class="tag">Sklearn</span><span class="tag">NumPy</span>
+                        <span class="tag">Pandas</span><span class="tag">LangChain</span><span class="tag">LLMs</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Cloud & Distributed Systems</h3>
+                    <div class="tags-container">
+                        <span class="tag">AWS</span><span class="tag">Docker</span><span class="tag">Microservices</span>
+                        <span class="tag">MongoDB</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span>
+                        <span class="tag">Linux</span><span class="tag">Cypress</span><span class="tag">Git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Non-Technical Skills Section -->
+        <section id="softskills" class="section-container">
+            <h2 class="section-title">Non-Technical Skills</h2>
+            <div class="skills-grid soft-skills-grid">
+                <div class="skills-category">
+                    <h3>Leadership & Collaboration</h3>
+                    <div class="tags-container">
+                        <span class="tag">Cross-Functional Leadership</span><span class="tag">Mentoring</span><span class="tag">Stakeholder Communication</span>
+                        <span class="tag">Team Coaching</span><span class="tag">Operational Collaboration</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Problem-Solving & Delivery</h3>
+                    <div class="tags-container">
+                        <span class="tag">Critical Thinking</span><span class="tag">Impact Planning</span><span class="tag">Decision Making</span>
+                        <span class="tag">Time Management</span><span class="tag">Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Courses Section -->
+        <section id="certifications" class="section-container">
+            <h2 class="section-title">Certifications &amp; Courses</h2>
+            <div class="certifications-grid">
+                <article class="card credential-card">
+                    <span class="credential-type">Certification</span>
+                    <h3>Google Cybersecurity Professional Certificate</h3>
+                    <p class="credential-provider">Google</p>
+                    <time datetime="2023-11">Completed Nov 2023</time>
+                </article>
+                <article class="card credential-card">
+                    <span class="credential-type">Certification</span>
+                    <h3>IBM Data Analyst Certification</h3>
+                    <p class="credential-provider">Coursera</p>
+                    <time datetime="2022-12">Completed Dec 2022</time>
+                </article>
+                <article class="card credential-card">
+                    <span class="credential-type">Certification</span>
+                    <h3>Oracle Certified Java Associate</h3>
+                    <p class="credential-provider">Oracle</p>
+                    <time datetime="2021-03">Completed Mar 2021</time>
+                </article>
+                <article class="card credential-card">
+                    <span class="credential-type">Course</span>
+                    <h3>Blockchain and Cryptocurrency</h3>
+                    <p class="credential-provider">University of Michigan</p>
+                    <time datetime="2023-09">Completed Sep 2023</time>
+                </article>
+                <article class="card credential-card">
+                    <span class="credential-type">Courses</span>
+                    <h3>Data Analytics Essentials &amp; Data Science Essentials</h3>
+                    <time datetime="2023-09">Completed Sep 2023</time>
+                </article>
+                <article class="card credential-card">
+                    <span class="credential-type">Course</span>
+                    <h3>Networking Basics</h3>
+                    <p class="credential-provider">Cisco</p>
+                    <time datetime="2022-11">Completed Nov 2022</time>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section-container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <!-- University of Pennsylvania Appointments -->
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <h4>University of Pennsylvania</h4>
+                        <span class="role">Teaching Assistant & Mentor</span>
+                        <span class="duration">Fall 2026 - Spring 2027</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="sub-role-block">
+                            <h5>TA Mentor / Project Manager — CIS 4010: Senior Design <span class="sub-date">(Fall 2026, Spring 2027)</span></h5>
+                            <p>Managing and mentoring engineering project designs, overseeing structural milestone tracking and timeline deliveries.</p>
+                        </div>
+                        <div class="sub-role-block">
+                            <h5>Teaching Assistant — Human-Computer Interaction (CIS 5120) <span class="sub-date">(Fall 2026)</span></h5>
+                            <p>Coordinating course workflows, evaluating technical user interface deliverables, and providing technical support to students.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Citi Corp Unified Block -->
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <h4>Citi Corp</h4>
+                        <span class="role">Corporate Technology Operations</span>
+                        <span class="duration">March 2023 - July 2026</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="sub-role-block">
+                            <h5>Technology Analyst II <span class="sub-date">(July 2025 - July 2026)</span></h5>
+                            <p>At Citi Corp, Pune, I led automation and backend engineering efforts across brokerage and KYC systems. I developed scalable AWS S3-based services and built automated batch API testing pipelines with FastAPI, reducing manual operational effort by 20%.</p>
+                            <p>I also contributed to a Generative AI-powered KYC classification and information extraction platform using LLMs, BERT, YOLO, SpaCy, and FastAPI, improving document processing speed by 40% while strengthening data reliability.</p>
+                        </div>
+                        <div class="sub-role-block">
+                            <h5>Technology Analyst I <span class="sub-date">(July 2024 - July 2025)</span></h5>
+                            <p>As Technology Analyst I, I built an end-to-end UI and database automation framework with Cypress and a custom reporting framework, which reduced manual testing effort by 60%. This work earned a Citi Gold Award for operational excellence and collaboration.</p>
+                            <p>I also delivered a Spring Boot microservice for systematic data discrepancy reporting and cross-environment database validation, increasing deployment transparency and improving operational reliability.</p>
+                        </div>
+                        <div class="sub-role-block">
+                            <h5>Summer Intern Analyst <span class="sub-date">(March 2023 - July 2023)</span></h5>
+                            <p>During my Citi internship, I automated transaction data analysis workflows using Python and developed an Angular dashboard that reduced manual effort by 30%. I monitored real-time transaction pipelines to detect anomalies and improved transaction accuracy by 15%.</p>
+                            <p>These contributions helped secure my pre-placement offer (PPO) to join Citi full-time as a Technology Analyst.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section-container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-cards">
+                <div class="card education-card">
+                    <div class="card-header">
+                        <h3>University of Pennsylvania</h3>
+                        <span class="date">Aug 2026 - May 2028</span>
+                    </div>
+                    <p class="degree">Master of Science in Computer and Information Science (MS CIS)</p>
+                </div>
+                <div class="card education-card">
+                    <div class="card-header">
+                        <h3>Veermata Jijabai Technological Institute (VJTI)</h3>
+                        <span class="date">Aug 2020 - Jun 2024</span>
+                    </div>
+                    <p class="degree">B.Tech in Computer Engineering</p>
+                    <p class="highlight-detail"><i class="fas fa-medal"></i> Gold Medalist (Rank: 1) | CGPA: 3.93/4</p>
+                </div>
+                <div class="card education-card">
+                    <div class="card-header">
+                        <h3>HSC Grade 12 : High School</h3>
+                        <span class="date">Completed 2020</span>
+                    </div>
+                    <p class="degree">State Board of Maharashtra</p>
+                    <p class="highlight-detail"><i class="fas fa-trophy"></i> Stood 1st runner-up in the State of Maharashtra with a percentage of 97.33%</p>
+                </div>
+
+                <div class="card education-card">
+                    <div class="card-header">
+                        <h3>ICSE Grade 10 : High School</h3>
+                        <span class="date">Completed 2018</span>
+                    </div>
+                    <p class="degree">Billabong High International School, Thane</p>
+                    <p class="highlight-detail"><i class="fas fa-trophy"></i> Acheieved 96% in 10th grade ICSE examinations. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Publications Section -->
+        <section id="publications" class="section-container">
+            <h2 class="section-title">Research Publications</h2>
+            <div class="publications-wrapper">
+                <div class="card publication-card">
+                    <span class="badge">IEEE Conference Publication</span>
+                    <h3>Improved Faster-RCNN for Ripeness and Size Detection of Mangoes</h3>
+                    <p class="pub-meta">Published & Presented in Dubai • Nov 2024</p>
+                    <p>Advanced and validated an improved Resnet-based Faster RCNN model in PyTorch for multi-label classification and object detection, accurately estimating mango ripeness and size values.</p>
+                    <div class="card-footer">
+                        <div class="project-tags"><span class="tag">PyTorch</span><span class="tag">ResNet</span><span class="tag">Computer Vision</span></div>
+                        <a href="https://ieeexplore.ieee.org/document/10864434/" target="_blank" class="btn btn-secondary publication-link">Read Publication</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Sage Mind -->
+                <div class="card project-card">
+                    <h3>Sage Mind</h3>
+                    <p>AI Mental Health Companion (MERN + HF Router + OpenAI SDK) SageMind is a full-stack AI mental health companion that provides empathetic, CBT-inspired conversations, mood tracking, and actionable suggestions based on a user's chat history.</p>
+                    <div class="card-footer">
+                        <div class="project-tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">FastAPI</span><span class="tag">LLMs</span></div>
+                        <a href="https://github.com/RushabhM03/SageMind" target="_blank" class="icon-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <!-- Talent Sustain IQ -->
+                <div class="card project-card">
+                    <h3>Talent Sustain IQ</h3>
+                    <p>Integrated an XGBoost-powered employee retention prediction system utilizing employment history, featuring robust error logging frameworks, custom REST training data APIs, and an updated analytics page.</p>
+                    <div class="card-footer">
+                        <div class="project-tags"><span class="tag">Flask</span><span class="tag">TensorFlow</span><span class="tag">XGBoost</span></div>
+                        <a href="https://github.com/RushabhM03/TalentSustainIQ" target="_blank" class="icon-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <h3>RateLimiter</h3>
+                    <p>Built a reusable rate limiting system for APIs and distributed services, enabling fine-grained request control and graceful backoff handling for high-throughput systems.</p>
+                    <div class="card-footer">
+                        <div class="project-tags"><span class="tag">Python</span><span class="tag">Redis</span><span class="tag">FAST API</span><span class="tag">SQL</span></div>
+                        <a href="https://github.com/RushabhM03/RateLimiter" target="_blank" class="icon-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <h3>Prompt Enhancer</h3>
+                    <p>Created a prompt refinement toolkit to improve LLM prompt quality, structure, and context accuracy for better natural language output across conversational AI use cases.</p>
+                    <div class="card-footer">
+                        <div class="project-tags"><span class="tag">AI</span><span class="tag">Prompt Engineering</span><span class="tag">NLP</span></div>
+                        <a href="https://github.com/RushabhM03/PromptEnhancer" target="_blank" class="icon-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <h3>VectorBase</h3>
+                    <p>Developed a vector search and retrieval prototype for embeddings-based semantic search, enabling rapid similarity lookup against large knowledge stores.</p>
+                    <div class="card-footer">
+                        <div class="project-tags"><span class="tag">Vector Search</span><span class="tag">Embeddings</span><span class="tag">Search</span></div>
+                        <a href="https://github.com/RushabhM03/VectorBase" target="_blank" class="icon-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <h3>File Redact</h3>
+                    <p>This is an nlp-powered streamlit app that takes the contents of the file as input and based on the selection redacts the keywords from the document.</p>
+                    <div class="card-footer">
+                        <div class="project-tags"><span class="tag">Spacy NER</span><span class="tag">NLP</span><span class="tag">Python</span></div>
+                        <a href="https://github.com/RushabhM03/FileRedact" target="_blank" class="icon-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beyond the Code Section -->
+        <section id="beyond-the-code" class="section-container">
+            <h2 class="section-title">Beyond the Code</h2>
+            <div class="subsections-container">
+                <!-- Awards Sub-section -->
+                <div class="sub-block">
+                    <h3><i class="fas fa-award"></i> Awards & Achievements</h3>
+                    <ul class="clean-list">
+                        <li><strong>Gold Medalist & Academic Rank 1</strong> — Veermata Jijabai Technological Institute.</li>
+                        <li><strong>Citi Gratitude Gold and Bronze Awards</strong> — Recognized for operational excellence and collaboration across technical and business teams.</li>
+                        <li><strong>State High-School Board Recognition</strong> — 1st runner-up out of all students across the entire state of Maharashtra (97.33%).</li>
+                    </ul>
+                </div>
+
+                <!-- Extracurriculars Sub-section -->
+                <div class="sub-block">
+                    <h3><i class="fas fa-users"></i> Extracurricular Activities and Hobbies</h3>
+                    <ul class="clean-list">
+                        <li><strong>Branch Captain</strong> — Spearheaded Basketball and Table Tennis teams at Enthusia-VJTI, mentoring team dynamics.</li>
+                        <li><strong>Hobbies </strong> — Poker, Racket Sports(Table tennis, Pickelball, Tennis), Basketball, Gym</li>
+                    </ul>
+                </div>
+
+                <!-- Volunteering Sub-section -->
+                <div class="sub-block">
+                    <h3><i class="fas fa-hand-holding-heart"></i> Volunteering</h3>
+                    <ul class="clean-list">
+                        <li><strong>Machine Learning Team Member</strong> — Google Developer Student Clubs VJTI (Mar 2023 - Jun 2024). I was part of the core ML team, led a regression and forecasting workshop for juniors, and helped run a 24-hour hackathon on campus.</li>
+                        <li><strong>Mentor & ML Team Member</strong> — Community of Coders, VJTI (Mar 2022 - Jun 2024). I mentored 3 teams of 4 students each at Inheritance 2023, guided web development and machine learning projects, and taught data science fundamentals to juniors.</li>
+                        <li><strong>Rotaract Club Volunteer</strong> — Rotaract Club of Mulund Hill View (Jun 2023 - Jun 2024). I supported blood donation camps, collected mango seedlings for replanting, and helped organize a literary drive to donate stationery and books to underprivileged children.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form (No Labels Layout) -->
+        <section id="contact" class="section-container contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <form id="contactForm" class="clean-form" action="https://formsubmit.co/rpmaru@engineering.upenn.edu" method="POST">
+                    <input type="hidden" name="_subject" value="New portfolio contact form submission">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" id="name" name="name" placeholder="Full Name" required autocomplete="name">
+                    <input type="email" id="email" name="email" placeholder="Email Address" required autocomplete="email">
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message..." required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Secure Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
