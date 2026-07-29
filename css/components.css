@@ -263,6 +263,68 @@ html[data-theme="light"] .theme-toggle {
     margin-top: 1rem;
 }
 
+.blogs-grid .publication-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.75rem;
+}
+
+.blog-card-link {
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.blog-card-link:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 4px;
+}
+
+.blogs-grid .card-footer {
+    margin-top: auto;
+    padding-top: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blogs-grid .project-tags {
+    justify-content: center;
+}
+
+.blog-read-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+@media (min-width: 701px) {
+    .blogs-grid .card-footer {
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 0.75rem;
+    }
+
+    .blogs-grid .project-tags {
+        flex-wrap: nowrap;
+        gap: 0.35rem;
+    }
+
+    .blogs-grid .tag {
+        padding: 0.25rem 0.6rem;
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+}
+
 .contact-details {
     padding: 2.5rem;
     text-align: center;
@@ -395,8 +457,12 @@ html[data-theme="light"] .btn-secondary {
     }
 
     .card-footer {
-        align-items: flex-start;
+        align-items: center;
         flex-direction: column;
+    }
+
+    .card-footer .project-tags {
+        justify-content: center;
     }
 
     .icon-link {

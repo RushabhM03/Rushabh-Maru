@@ -42,7 +42,7 @@
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2.25rem;
+    gap: 1.25rem;
 }
 
 .nav-links a {
@@ -221,10 +221,18 @@
     align-items: stretch;
 }
 
+.blogs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+}
+
 /* Give every project card one shared height on desktop, even across rows. */
 @media (min-width: 901px) {
     .projects-grid,
-    .certifications-grid {
+    .certifications-grid,
+    .blogs-grid {
         grid-auto-rows: 1fr;
     }
 }
@@ -361,6 +369,7 @@
     .skills-grid,
     .projects-grid,
     .certifications-grid,
+    .blogs-grid,
     .soft-skills-grid {
         grid-template-columns: 1fr;
         gap: 1.25rem;
