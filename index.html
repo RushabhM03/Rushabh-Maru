@@ -24,6 +24,7 @@
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#now">Now</a></li>
                 <li><a href="#techstack">Skills</a></li>
                 <li><a href="#certifications">Credentials</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -229,44 +230,53 @@
             </div>
         </section>
 
-        <!-- Education Section -->
         <section id="education" class="section-container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-cards">
-                <div class="card education-card">
-                    <div class="card-header">
-                        <h3>University of Pennsylvania</h3>
-                        <span class="date">Aug 2026 - May 2028</span>
-                    </div>
-                    <p class="degree">Master of Science in Computer and Information Science (MS CIS)</p>
+    <h2 class="section-title">Education</h2>
+    <div class="edu-timeline">
+        <div class="edu-timeline-item">
+            <div class="card education-card">
+                <div class="card-header">
+                    <h3>University of Pennsylvania</h3>
+                    <span class="date">Aug 2026 - May 2028</span>
                 </div>
-                <div class="card education-card">
-                    <div class="card-header">
-                        <h3>Veermata Jijabai Technological Institute (VJTI)</h3>
-                        <span class="date">Aug 2020 - Jun 2024</span>
-                    </div>
-                    <p class="degree">B.Tech in Computer Engineering</p>
-                    <p class="highlight-detail"><i class="fas fa-medal"></i> Gold Medalist (Rank: 1) | CGPA: 3.93/4</p>
-                </div>
-                <div class="card education-card">
-                    <div class="card-header">
-                        <h3>HSC Grade 12 : High School</h3>
-                        <span class="date">Completed 2020</span>
-                    </div>
-                    <p class="degree">State Board of Maharashtra</p>
-                    <p class="highlight-detail"><i class="fas fa-trophy"></i> Stood 1st runner-up in the State of Maharashtra with a percentage of 97.33%</p>
-                </div>
-
-                <div class="card education-card">
-                    <div class="card-header">
-                        <h3>ICSE Grade 10 : High School</h3>
-                        <span class="date">Completed 2018</span>
-                    </div>
-                    <p class="degree">Billabong High International School, Thane</p>
-                    <p class="highlight-detail"><i class="fas fa-trophy"></i> Acheieved 96% in 10th grade ICSE examinations. </p>
-                </div>
+                <p class="degree">Master of Science in Computer and Information Science (MS CIS)</p>
             </div>
-        </section>
+        </div>
+        
+        <div class="edu-timeline-item">
+            <div class="card education-card">
+                <div class="card-header">
+                    <h3>Veermata Jijabai Technological Institute (VJTI)</h3>
+                    <span class="date">Aug 2020 - Jun 2024</span>
+                </div>
+                <p class="degree">B.Tech in Computer Engineering</p>
+                <p class="highlight-detail"><i class="fas fa-medal"></i> Gold Medalist (Rank: 1) | CGPA: 3.93/4</p>
+            </div>
+        </div>
+
+        <div class="edu-timeline-item">
+            <div class="card education-card">
+                <div class="card-header">
+                    <h3>HSC Grade 12 : High School</h3>
+                    <span class="date">Completed 2020</span>
+                </div>
+                <p class="degree">State Board of Maharashtra</p>
+                <p class="highlight-detail"><i class="fas fa-trophy"></i> Stood 1st runner-up in the State of Maharashtra with a percentage of 97.33%</p>
+            </div>
+        </div>
+
+        <div class="edu-timeline-item">
+            <div class="card education-card">
+                <div class="card-header">
+                    <h3>ICSE Grade 10 : High School</h3>
+                    <span class="date">Completed 2018</span>
+                </div>
+                <p class="degree">Billabong High International School, Thane</p>
+                <p class="highlight-detail"><i class="fas fa-trophy"></i> Achieved 96% in 10th grade ICSE examinations.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- Research Publications Section -->
         <section id="publications" class="section-container">
@@ -286,9 +296,10 @@
         </section>
 
         <!-- Blog Section -->
-        <section id="blogs" class="section-container">
+        <!--<section id="blogs" class="section-container">
             <h2 class="section-title">Writing</h2>
-            <div class="blogs-grid">
+            <div class="blog-carousel" role="region" aria-label="Blog articles">
+                <div class="blogs-track" id="blogsTrack">
                 <a href="https://medium.com/dscvjti/ocja-the-java-journey-a9bc8a2cd13b" target="_blank" rel="noopener noreferrer" class="card publication-card blog-card-link" aria-label="Read OCJA: The Java Journey on Medium">
                     <span class="badge">Medium Article</span>
                     <h3>OCJA: The Java Journey</h3>
@@ -309,8 +320,67 @@
                         <span class="blog-read-icon" aria-hidden="true"><i class="fas fa-arrow-up-right-from-square"></i></span>
                     </div>
                 </a>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-button" type="button" data-carousel-direction="previous" aria-label="Show previous blog"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+                    <button class="carousel-button" type="button" data-carousel-direction="next" aria-label="Show next blog"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </section>-->
+        <!-- Blog Section -->
+        <section id="blogs" class="section-container">
+            <h2 class="section-title">Writing</h2>
+            <div class="blog-carousel" role="region" aria-label="Blog articles">
+                <div class="blogs-viewport">
+                    <div class="blogs-track" id="blogsTrack">
+                        <!-- Slide 1 -->
+                        <div class="blog-slide">
+                            <a href="https://medium.com/dscvjti/ocja-the-java-journey-a9bc8a2cd13b" target="_blank" rel="noopener noreferrer" class="card publication-card blog-card-link" aria-label="Read OCJA: The Java Journey on Medium">
+                                <span class="badge">Medium Article</span>
+                                <h3>OCJA: The Java Journey</h3>
+                                <p class="pub-meta">Published Jan 2023 · 4 min read</p>
+                                <p>A firsthand account of preparing for the Oracle Certified Java Associate exam, covering study strategies, practice resources, and the key Java concepts that matter most.</p>
+                                <div class="card-footer">
+                                    <div class="project-tags"><span class="tag">Java</span><span class="tag">Oracle Certification</span></div>
+                                    <span class="blog-read-icon" aria-hidden="true"><i class="fas fa-arrow-up-right-from-square"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="blog-slide">
+                            <a href="https://medium.com/@rushabh.maru123/rethinking-frontend-automation-the-cypress-paradigm-and-end-to-end-database-validation-90f9dc24f645" target="_blank" rel="noopener noreferrer" class="card publication-card blog-card-link" aria-label="Read Rethinking Frontend Automation on Medium">
+                                <span class="badge">Medium Article</span>
+                                <h3>Rethinking Frontend Automation: The Cypress Paradigm and End-to-End Database Validation</h3>
+                                <p class="pub-meta">Frontend Automation · Cypress · End-to-End Validation</p>
+                                <p>An exploration of frontend test automation with Cypress, focusing on end-to-end database validation and building more reliable quality-assurance workflows.</p>
+                                <div class="card-footer">
+                                    <div class="project-tags"><span class="tag">Cypress</span><span class="tag">E2E Testing</span><span class="tag">Database Validation</span></div>
+                                    <span class="blog-read-icon" aria-hidden="true"><i class="fas fa-arrow-up-right-from-square"></i></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--<div class="blog-slide">
+                            <a href="https://medium.com/@rushabh.maru123/rethinking-frontend-automation-the-cypress-paradigm-and-end-to-end-database-validation-90f9dc24f645" target="_blank" rel="noopener noreferrer" class="card publication-card blog-card-link" aria-label="Read Rethinking Frontend Automation on Medium">
+                                <span class="badge">Medium Article</span>
+                                <h3>Rethinking Frontend Automation: The Cypress Paradigm and End-to-End Database Validation</h3>
+                                <p class="pub-meta">Frontend Automation · Cypress · End-to-End Validation</p>
+                                <p>An exploration of frontend test automation with Cypress, focusing on end-to-end database validation and building more reliable quality-assurance workflows.</p>
+                                <div class="card-footer">
+                                    <div class="project-tags"><span class="tag">Cypress</span><span class="tag">E2E Testing</span><span class="tag">Database Validation</span></div>
+                                    <span class="blog-read-icon" aria-hidden="true"><i class="fas fa-arrow-up-right-from-square"></i></span>
+                                </div>
+                            </a>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-button" type="button" data-carousel-direction="previous" aria-label="Show previous blog"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+                    <button class="carousel-button" type="button" data-carousel-direction="next" aria-label="Show next blog"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
             </div>
         </section>
+
 
         <!-- Projects Section -->
         <section id="projects" class="section-container">
