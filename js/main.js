@@ -1,4 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // --- Mobile Navigation ---
+    const navToggle = document.getElementById('navToggle');
+    const primaryNav = document.getElementById('primaryNav');
+
+    if (navToggle && primaryNav) {
+        const closeNavigation = () => {
+            primaryNav.classList.remove('is-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+            navToggle.setAttribute('aria-label', 'Open navigation menu');
+        };
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = primaryNav.classList.toggle('is-open');
+            navToggle.setAttribute('aria-expanded', String(isOpen));
+            navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+        });
+
+        primaryNav.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', closeNavigation);
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') closeNavigation();
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 1100) closeNavigation();
+        });
+    }
+
     // Reveal Scroll Interaction Implementation for popped timeline tracking
     const scrollElements = document.querySelectorAll('.card, .timeline-item, .sub-block, .edu-timeline-item');
 
